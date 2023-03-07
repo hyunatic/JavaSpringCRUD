@@ -25,7 +25,6 @@ public class StudentService {
         return studentRepository.insert(newStudent);
     }
     public Student updateSingleStudent(Student requestStudent){
-        //Get Existing Document from DB
         Student existingStudent = studentRepository.findStudentById(requestStudent.getId()).get();
 
         //Populate new value from request
