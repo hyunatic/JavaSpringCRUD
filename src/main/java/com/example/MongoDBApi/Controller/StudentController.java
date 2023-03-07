@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@FunctionalInterface
+interface StudentList{
+    public List<Student> Invoke(String value);
+}
 @RestController
 @RequestMapping("api/v1/student")
 @AllArgsConstructor
